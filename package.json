@@ -1,0 +1,22 @@
+{
+  "name": "simple-hapi-app",
+  "version": "1.0.0",
+  "description": "this is an awesome app!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycliuhw/simple-hapi-app.git"
+  },
+  "keywords": [
+    "hapi"
+  ],
+  "author": "Kelvin Liu - ycliuhw@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycliuhw/simple-hapi-app/issues"
+  },
+  "homepage": "https://github.com/ycliuhw/simple-hapi-app#readme"
+}
