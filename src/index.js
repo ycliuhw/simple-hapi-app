@@ -20,7 +20,8 @@ server.ext('onPreResponse', (request, reply) => {
 
   // Sadly had to uglily customise the error message here
   const error = response;
-  if (error.output.payload.message.includes('Invalid request payload JSON format')) {
+  console.log(`error --->`, error)
+  if (typeof error.output.payload.message === 'string' && error.output.payload.message.includes('Invalid request payload JSON format')) {
     error.output.payload.error = 'Could not decode request: JSON parsing failed';
   }
   return reply(error);

@@ -6,9 +6,7 @@ export function cleanUpPostHandler(request, reply) {
   try {
     payload = request.payload.payload;
   } catch (err) {
-    const errorMessage = 'Could not decode request: JSON parsing failed';
-    response = Boom.badRequest('bad request!');
-    response.output.payload.error = errorMessage;
+    response = Boom.badRequest('Invalid request payload JSON format');
     console.error(`cleanUpPostHandler -> `, err, `response -> `, response);
   }
   if (payload && Array.isArray(payload)) {
