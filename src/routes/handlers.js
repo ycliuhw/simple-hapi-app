@@ -29,5 +29,5 @@ export function cleanUpPostHandler(request, reply) {
       }
     }).filter(item => item);
   }
-  reply(response);
+  return reply(response);
 }
