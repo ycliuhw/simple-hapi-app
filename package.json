@@ -4,7 +4,9 @@
   "description": "this is an awesome app!",
   "main": "src/index.js",
   "scripts": {
-    "test": "test"
+    "start": "./node_modules/.bin/babel-node src/index.js",
+    "dev": "./node_modules/.bin/babel-node src/index.js",
+    "test": "echo `Error: no test specified` && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/ycliuhw/simple-hapi-app/issues"
   },
-  "homepage": "https://github.com/ycliuhw/simple-hapi-app#readme"
+  "homepage": "https://github.com/ycliuhw/simple-hapi-app#readme",
+  "dependencies": {
+    "boom": "4.2.0",
+    "hapi": "15.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-core": "6.18.2",
+    "babel-preset-latest": "6.16.0"
+  }
 }
