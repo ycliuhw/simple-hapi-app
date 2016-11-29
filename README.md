@@ -1,4 +1,4 @@
-# simpleHApiApp
+# simple-hapi-app
 
 ## Overview
 
@@ -17,7 +17,7 @@ NodeJS:
 
 Install dependencies:
 
-    cd simpleHApiApp
+    cd simple-hapi-app
     npm i
 
 Run `Dev` CMD:
