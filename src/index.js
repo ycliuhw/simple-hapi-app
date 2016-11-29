@@ -1,6 +1,5 @@
 require('babel-core');
 import Hapi from 'hapi';
-import Boom from "boom";
 
 import settings from './config/settings';
 import endpoints from './routes';
